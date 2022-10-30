@@ -40,7 +40,7 @@ public class List {
     {
         if (previousNode == null)
         {
-            System.out.println("The given previous node cannot be null");
+            System.out.println("O nó anterior fornecido não pode ser nulo");
             return;
         }
         Node newNode = new Node(info);
