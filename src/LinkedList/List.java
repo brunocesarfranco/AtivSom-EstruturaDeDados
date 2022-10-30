@@ -4,7 +4,7 @@ public class List {
 
     private Node head;
 
-    //Objeto com endereço do primeiro 
+    // Objeto com endereço do primeiro 
     public List() {
         head = null;
     }
@@ -19,8 +19,8 @@ public class List {
         return list.head == null;
     }
 
-    //Método inserePrimeiro
-    //Inserir um valor no inicio da lista
+    // Método inserePrimeiro
+    // Insere um valor no inicio da lista
     public void insertFirst(List list, int info) {
 
         Node node = new Node(info);
@@ -34,8 +34,8 @@ public class List {
         }
     }
 
-    //Método insereDepois
-    //Inserir um valor depois de um nó esperado
+    // Método insereDepois
+    // Insere um valor depois de um nó esperado
     public void insertAfter(Node previousNode, int info)
     {
         if (previousNode == null)
@@ -48,8 +48,8 @@ public class List {
         previousNode.setNext(newNode);
     }
 
-    //Método insereUltimo
-    //Inserir um valor no final da lista
+    // Método insereUltimo
+    // Insere um valor no final da lista
     public void insertLast(List list, int info)
     {
         Node node = new Node(info);
@@ -66,8 +66,8 @@ public class List {
         }
     }
 
-    //Método removePrimeiro
-    //Remover o primeiro nó da lista
+    // Método removePrimeiro
+    // Remove o primeiro nó da lista
     public void removeFirst(List list)
     {
         Node second = list.head.getNext();
@@ -75,8 +75,8 @@ public class List {
         list.head = second;
     }
 
-    //Método removeUltimo
-    //Remove o último nó da lista
+    // Método removeUltimo
+    // Remove o último nó da lista
     public void removeLast(List list)
     {
         if (list.head == null || list.head.getNext() == null) {
@@ -91,8 +91,8 @@ public class List {
         temp.setNext(null);
     }
 
-    //Método remove
-    //Remover qualquer nó da lista, deverá passar este nó como parâmetro na chamada do método
+    // Método remove
+    // Remove qualquer nó da lista, deverá passar este nó como parâmetro na chamada do método
     public void remove(List list, Node nodeToBeDeleted)
     {
         Node node = list.head;
@@ -108,8 +108,8 @@ public class List {
         }
     }
 
-    //Método mostrar
-    //Mostrar no console todos os itens da lista
+    // Método mostrar
+    // Mostra no console todos os itens da lista
     public void display() {
         Node node = head;
         while (node != null) {
